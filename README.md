@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="<!-- PASTE YOUR IMAGE LINK HERE -->" alt="macbook-animation banner" width="100%" />
+  <img src="https://i.postimg.cc/x8nk7kjY/Macbook.png" alt="macbook-animation banner" />
 </p>
 
 <h1 align="center">🚀 macbook-animation</h1>
