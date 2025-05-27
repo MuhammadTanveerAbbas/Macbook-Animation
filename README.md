@@ -75,9 +75,9 @@ The app will be served at [http://localhost:5173](http://localhost:5173)
 ├── public/             # Static assets (models, textures, etc.)
 ├── src/
 │   ├── components/     # 3D elements and logic containers
-│   ├── styles/         # Tailwind and custom styles
+│   ├── styles.css/     # Tailwind and custom styles
 │   ├── App.jsx         # Main UI shell
-│   └── main.jsx        # App entry point
+│   └── macContainer    # 3D Model Customizations
 ├── vite.config.js      # Vite configuration
 └── tailwind.config.js  # TailwindCSS configuration
 ```
