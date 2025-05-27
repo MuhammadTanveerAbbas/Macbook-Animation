@@ -1,0 +1,161 @@
+/* Layout Resets & Background */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #1c1c1e, #2c2c2e);
+    color: #fff;
+    overflow: hidden;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Canvas Layering & Responsiveness */
+.canvas-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    /* behind UI elements */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.canvas-wrapper canvas {
+    pointer-events: auto;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transform-origin: center center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .canvas-wrapper canvas {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .canvas-wrapper canvas {
+        transform: scale(0.6);
+    }
+}
+
+/* Frosted Glass Navigation */
+.glassy-nav {
+    position: relative;
+    z-index: 2;
+    /* in front of canvas */
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav Links & Hover Underline Animation */
+.nav-link {
+    position: relative;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    transition: color 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.nav-link:active {
+    color: #ddd;
+}
+
+/* Responsive Nav Sizing */
+@media (max-width: 768px) {
+    .glassy-nav {
+        gap: 4px;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .glassy-nav {
+        gap: 2px;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
+}
+
+/* Masked Text Effect */
+.masked {
+    position: relative;
+    background: linear-gradient(to right, #888, #eee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    z-index: 2;
+}
+
+.masked::before {
+    content: "macbook pro.";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #888, #eee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: blur(20px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Divider Line (optional) */
+.line {
+    border-bottom: 1px solid #333;
+    z-index: 2;
+    position: relative;
+}
