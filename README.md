@@ -49,7 +49,7 @@ Use Cases:
 Clone the repository and run the project locally:
 
 ```bash
-git clone https://github.com/MuhammadTanveerAbbas/macbook-animation.git
+git clone https://github.com/MuhammadTanveerAbbas/Macbook-Animation.git
 cd macbook-animation
 npm install
 npm run dev
