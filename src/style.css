@@ -1,0 +1,150 @@
+/* Base Resets */
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to bottom right, #1c1c1e, #2c2c2e);
+    color: #fff;
+    overflow: hidden;
+}
+
+.app-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', monospace;
+}
+
+/* Canvas */
+.canvas-wrapper {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Responsive Canvas Scaling */
+.canvas-wrapper canvas {
+    pointer-events: auto;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .canvas-wrapper canvas {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .canvas-wrapper canvas {
+        transform: scale(0.6);
+    }
+}
+
+/* Nav */
+.glassy-nav {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 60%;
+}
+
+.nav-link:active {
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .glassy-nav {
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .glassy-nav {
+        gap: 0.25rem;
+        padding: 0.25rem 0.75rem;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
+}
+
+/* Hero */
+.hero {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.masked {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #999, #eee);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtext {
+    margin-top: 0.5rem;
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
