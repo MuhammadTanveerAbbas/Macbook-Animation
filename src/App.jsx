@@ -9,8 +9,8 @@ const LazyMacContainer = lazy(() => import("./components/MacContainer"));
 const MemoizedMacContainer = memo(LazyMacContainer);
 
 const NAV_LINKS = [
-  { label: "Home - ", href: "/" },
-  { label: "Contact - ", href: "mailto:muhammadtanveerabbas.dev@gmail.com" },
+  { label: "Home", href: "/" },
+  { label: "Contact", href: "mailto:muhammadtanveerabbas.dev@gmail.com" },
   { label: "Github", href: "https://github.com/MuhammadTanveerAbbas" },
 ];
 
