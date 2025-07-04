@@ -59,16 +59,6 @@ The app will be served at [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## ✅ Features
-
-* 🎬 High-quality, realistic MacBook 3D model
-* 📱 Fully responsive layout
-* ♻️ Modular and reusable components
-* ⚡ Instant feedback with Vite's HMR
-* 🎯 Built for performance and scalability
-
----
-
 ## 📁 Project Structure
 
 ```
