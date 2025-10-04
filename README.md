@@ -1,94 +1,77 @@
-<p align="center">
-  <img src="https://i.postimg.cc/x8nk7kjY/Macbook.png" alt="macbook-animation banner" />
-</p>
-
-<h1 align="center">🚀 macbook-animation</h1>
-
-<p align="center">
-  <em>A high-fidelity 3D MacBook animation built with React Three Fiber, TailwindCSS, and Vite.</em>
-</p>
-<br clear="both">
-
 <div align="center">
-  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" height="40" alt="vite logo" />
-  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="40" alt="react logo" />
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="40" alt="tailwindcss logo" />
-  <img src="https://img.shields.io/badge/Three.js-000000?logo=threedotjs&logoColor=white&style=for-the-badge" height="40" alt="threejs logo" />
+
+  <img src="https://i.postimg.cc/x8nk7kjY/Macbook.png" alt="macbook-animation banner" />
 </div>
 
-
-###
-
----
-
-## 🔍 Overview
-
-**macbook-animation** is a performance-tuned, WebGL-powered 3D experience powered by [React Three Fiber](https://github.com/pmndrs/react-three-fiber). It’s engineered with modularity and responsiveness in mind, making it ideal for integration into modern React-based UIs.
-
-Use Cases:
-- ✨ Portfolio hero sections
-- 📦 SaaS product demos
-- 🚀 Landing pages
-- 🧪 Experimental interactive UI
+<div align="center">
+  <h1>Macbook 💻 Animation 🚀</h1>
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" height="40" alt="Vite" />
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="40" alt="React" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="40" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Three.js-000000?logo=threedotjs&logoColor=white&style=for-the-badge" height="40" alt="Three.js" />
+</div>
 
 ---
 
-## 🛠 Tech Stack
+### 🧠 What is it
 
-- ⚛️ **React 18** – Modern UI framework
-- 🎨 **TailwindCSS** – Utility-first CSS framework
-- 🎮 **Three.js + @react-three/fiber** – Declarative 3D with React
-- 🧩 **@react-three/drei** – Helpers for efficient 3D composition
-- ⚡ **Vite** – Lightning-fast dev and build tool
-- ✅ **ESLint** – Code quality enforcement
+**Macbook Animation** is a high fidelity 3D experience built with **React Three Fiber**, **TailwindCSS**, and **Vite**.
+<br/>
+It is designed for smooth motion, modern visuals, and easy integration into any React interface  
 
----
-
-## 📦 Getting Started
-
-Clone the repository and run the project locally:
-
-```bash
-git clone https://github.com/MuhammadTanveerAbbas/Macbook-Animation.git
-cd macbook-animation
-npm install
-npm run dev
-````
-
-The app will be served at [http://localhost:5173](http://localhost:5173)
+Use Cases  
+- ✨ Portfolio hero sections  
+- 📦 Product showcases  
+- 🚀 Landing pages  
+- 🧪 Interactive UI concepts  
 
 ---
 
-## 📁 Project Structure
+### 💡 Why it is
 
-```
-├── public/             # Static assets (models, textures, etc.)
-├── src/
-│   ├── components/     # 3D elements and logic containers
-│   ├── styles.css/     # Tailwind and custom styles
-│   ├── App.jsx         # Main UI shell
-│   └── macContainer    # 3D Model Customizations
-├── vite.config.js      # Vite configuration
-└── tailwind.config.js  # TailwindCSS configuration
-```
+Creating 3D visuals in web interfaces can be difficult and heavy on performance.
+<br/>
+**macbook animation** solves this by offering an optimized setup that works perfectly in React with clean and modular code  
 
 ---
 
-## 🧩 Customization Tips
+### ⚙️ What is the Problem
 
-* Swap the MacBook model with your own `.glb`/`.gltf` asset via the `public/` folder.
-* Tweak animation speed or interactivity via component props.
-* Extend Tailwind config for custom themes or breakpoints.
+Many 3D projects in React  
+- Take long to load  
+- Are hard to configure  
+- Lack flexibility for reuse  
+
+---
+
+### 🧩 What is the Solution
+
+**macbook animation** delivers a fast and efficient workflow using  
+- ⚛️ React for UI  
+- 🎨 TailwindCSS for design  
+- 🎮 Three.js and @react-three/fiber for 3D rendering  
+- 🧩 @react-three/drei for helpers  
+- ⚡ Vite for development speed  
 
 ---
 
-## 🤝 Contributing
+### 🚀 Result
 
-Contributions are welcome!
-If you're proposing a major change, please [open an issue](https://github.com/MuhammadTanveerAbbas/macbook-animation/issues) first to discuss it.
-
-## 📄 License
-
-Distributed under the **MIT License**. See [`LICENSE`](./LICENSE) for more information.
+A lightweight and responsive 3D animation that  
+- Runs smoothly across devices  
+- Looks modern and cinematic  
+- Integrates easily into any React project  
 
 ---
+
+### 🛠️ Technology Used
+
+React • TailwindCSS • Vite • Three.js • @react-three/fiber • @react-three/drei  • Vercel
+
+---
+
+<div align="center">
+
+Designed and Developed with 🧠 by **Muhammad Tanveer Abbas** 🌟
+
+</div>
