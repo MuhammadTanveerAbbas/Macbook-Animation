@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <h1>Macbook 💻 Animation 🚀</h1>
+  <h1>Macbook 💻 Animation 🎨</h1>
   <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" height="40" alt="Vite" />
   <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" height="40" alt="React" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="40" alt="Tailwind CSS" />
