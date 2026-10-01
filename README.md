@@ -66,7 +66,7 @@ A lightweight and responsive 3D animation that
 
 ### 🛠️ Technology Used
 
-React • TailwindCSS • Vite • Three.js • @react-three/fiber • @react-three/drei  • Vercel
+React • TailwindCSS • Vite • Three.js • react-three/fiber • react-three/drei  • Vercel
 
 ---
 
